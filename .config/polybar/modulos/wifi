@@ -1,0 +1,13 @@
+#!/bin/sh
+
+LOCO=$(ip ad | awk '/state UP/ { print $2 }' | cut -d":" -f1)
+if [ ${LOCO} == "wlo1" ]
+then
+ssid=$(iwgetid -r)
+elif [[ ${LOCO} =~ "enp0s25" ]]
+then
+ssid="Red"
+else
+ssid="N/A"
+fi
+echo $ssid

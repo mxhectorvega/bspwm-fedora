@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find ~/ | sed 's/ /\\ /g' | sort -f | rofi -dmenu -p "Buscar archivos" | xargs xdg-open
