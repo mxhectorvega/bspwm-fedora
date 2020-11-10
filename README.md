@@ -32,6 +32,7 @@ Otorgar permisos de ejecucion a los archivos:
 
 ```
 chmod +x .config/bspwm/bspwmrc
+
 chmod +x .xinitrc
 ```
 
@@ -47,7 +48,7 @@ pip install pywal
 **Temas**
 
 ```
-pkg install papirus-icon-theme materia-gtk-theme
+sudo dnf install papirus-icon-theme materia-gtk-theme
 ```
 
 
